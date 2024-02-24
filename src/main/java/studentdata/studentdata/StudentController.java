@@ -27,7 +27,7 @@ public class StudentController {
     }
     @GetMapping("/home")
     public String showHome() {
-        return "/students/home";
+        return "students/home";
     }
     @GetMapping("/add")
     public String showAdd() {
