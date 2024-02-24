@@ -51,7 +51,7 @@ public class StudentController {
             response.setStatus(200);
         }
 
-        return "/students/home";
+        return "students/home";
     }
     @GetMapping("/list")
     public String getAllStudents(Model model) {
