@@ -1,0 +1,266 @@
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kanit-medium-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+  
+.kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.kanit-regular-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit-semibold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* HOME */
+img {
+    width: 200px;
+    height: auto;
+}
+.home {
+    background-image: url(home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+
+
+}
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 8%;
+}
+.menu-display {
+    background-color: rgba(255, 255, 255, 0.764);
+    padding: 5px 20px 5px;
+    width: 45%;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header {
+    color: rgb(170, 50, 50);
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.features {
+    padding-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: rgb(170, 50, 50) !important; 
+    border-color: rgb(170, 50, 50) !important;
+    transition-duration: 0.1s !important;
+}
+.btn-primary:hover {
+    background-color: rgb(139, 43, 43) !important; 
+    border-color: rgb(139, 43, 43) !important;
+}
+
+/* ADD */
+.headline {
+    background-color: rgba(139, 43, 43, 0.911);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.nav-link {
+    color:rgb(255, 255, 255) !important;
+}
+
+.add {
+    background-image: url(add.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.form {
+    background-color: rgba(255, 255, 255, 0.764);
+    padding: 5px 20px 5px;
+    width: 45%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 8vh;
+    margin-left: 26%;
+}
+
+.input-box {
+    width: 280px;
+}
+
+.navigation-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* LIST */
+.list {
+    background-image: url(list.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
+    height: 100vh;
+}
+
+.table-container {
+    background-color: white;
+    padding: 5px 20px 20px;
+    width: 85%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 8vh;
+    margin-left: 7%;
+}
+
+.table-title {
+    color: rgb(170, 50, 50) !important;
+}
+
+.modify-button, .delete-button {
+    display: none;
+}
+
+.options-container:hover .modify-button,
+.options-container:hover .delete-button {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(170, 50, 50);
+}
+
+/* CHANGE */
+.change {
+    background-image: url(change.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* DELETE */
+.delete {
+    background-image: url(delete.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 674px) {
+    .input-box {
+        width: 240px;
+    }
+    .header {
+        font-size: 25px;
+    }
+}
+
+/* DISPLAY */
+.display {
+    background-image: url(display.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+}
+.student-container {
+    padding: 35px 10px 35px;
+    width: auto;
+    height: auto;
+    margin-top: 8vh;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.student-card {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.student-card:hover .display-btn,
+.student-card:hover .display-btn {
+    display: block;
+}
+.display-btn {
+    display: none;
+}
+.Applied_Sciences {
+    background-color: lightblue;
+}
+.Art_and_Social_Sciences {
+    background-color: lightcoral;
+}
+.Business {
+    background-color: lightcyan;
+}
+.Education {
+    background-color: lightgoldenrodyellow;
+}
+.Communication_Art_and_Technology {
+    background-color: lightgreen;
+}
+.Environment {
+    background-color: lightpink;
+}
+.Health_Sciences {
+    background-color: lightsalmon;
+}
+.Science {
+    background-color: lightgray;
+}
