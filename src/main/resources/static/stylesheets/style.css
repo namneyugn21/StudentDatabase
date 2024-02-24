@@ -241,26 +241,26 @@ img {
     display: none;
 }
 .Applied_Sciences {
-    background-color: lightblue;
+    background-color: rgb(173, 216, 230);
 }
 .Art_and_Social_Sciences {
-    background-color: lightcoral;
+    background-color: rgb(240, 127, 127);
 }
 .Business {
-    background-color: lightcyan;
+    background-color: rgb(224, 255, 255);
 }
 .Education {
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(250, 250, 210);
 }
 .Communication_Art_and_Technology {
-    background-color: lightgreen;
+    background-color: rgb(144, 238, 144);
 }
 .Environment {
-    background-color: lightpink;
+    background-color: rgb(255, 182, 193);
 }
 .Health_Sciences {
-    background-color: lightsalmon;
+    background-color: rgb(255, 160, 122);
 }
 .Science {
-    background-color: lightgray;
+    background-color: rgb(211, 211, 211);
 }
