@@ -31,7 +31,7 @@ public class StudentController {
     }
     @GetMapping("/add")
     public String showAdd() {
-        return "/students/add";
+        return "students/add";
     }
    @PostMapping("/students/add")
     public String addStudent(@RequestParam Map<String, String> newstudent, HttpServletResponse response) {
