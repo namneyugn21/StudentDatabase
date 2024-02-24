@@ -57,13 +57,13 @@ public class StudentController {
     public String getAllStudents(Model model) {
         List<Student> students = studentRepo.findAll();
         model.addAttribute("sdns", students);
-        return "/students/list";
+        return "students/list";
     }
     @GetMapping("/change")
     public String changeStudent(@RequestParam int sid, Model model) {
         Student student = studentRepo.findBySid(sid);
         model.addAttribute("student", student);
-        return "/students/change";
+        return "students/change";
     }
     @PostMapping("/students/change")
     public String updateStudent(@RequestParam Map<String, String> updatedStudent, HttpServletResponse response) {
@@ -87,28 +87,28 @@ public class StudentController {
         studentRepo.save(student);
         response.setStatus(201);
 
-        return "/students/home";
+        return "students/home";
     }
 
     @GetMapping("/delete")
     public String deleteConfirmation(@RequestParam int sid, Model model) {
         Student student = studentRepo.findBySid(sid);
         model.addAttribute("student", student);
-        return "/students/delete";
+        return "students/delete";
     }
     @PostMapping("/students/delete")
     public String deleteStudent(@RequestParam int sid, HttpServletResponse response) {
         Student student = studentRepo.findBySid(sid);
         studentRepo.delete(student);
         response.setStatus(200);
-        return "/students/home";
+        return "students/home";
     }
 
     @GetMapping("/display")
     public String displayStudents(Model model) {
         List<Student> students = studentRepo.findAll();
         model.addAttribute("students", students);
-        return "/students/display";
+        return "students/display";
     }
 }
  
